@@ -2,7 +2,7 @@ import java.awt.*;
 import java.util.ArrayList;
 
 /**
- * Created by FerranRuiz on 05/02/2015.
+ * Created by Raindrinker on 05/02/2015.
  */
 public class DungeonGenerator {
 
