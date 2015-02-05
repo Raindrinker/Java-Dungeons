@@ -174,13 +174,26 @@ public class DungeonGenerator {
      * @param trim number of times to trim
      */
     private static void trim(int[][] t, int trim){
+
         int sizex = t.length, sizey = t[0].length;
+        int[][] taux = new int[sizex][sizey];
+
+        for (int i = 1; i < sizex; i += 1) {
+            for (int j = 1; j < sizey; j += 1) {
+                taux[i][j] = t[i][j];
+            }
+        }
         for(int k = 0; k < trim; k++){
             for (int i = 1; i < sizex; i += 1) {
                 for (int j = 1; j < sizey; j += 1) {
                     if(numOuts(t, i, j) == 1){
-                        t[i][j] = 0;
+                        taux[i][j] = 0;
                     }
+                }
+            }
+            for (int i = 1; i < sizex; i += 1) {
+                for (int j = 1; j < sizey; j += 1) {
+                    t[i][j] = taux[i][j];
                 }
             }
         }
@@ -192,14 +205,27 @@ public class DungeonGenerator {
      * @param expand number of times to expand
      */
     private static void expand(int[][] t, int expand){
+
         int sizex = t.length, sizey = t[0].length;
+        int[][] taux = new int[sizex][sizey];
+
+        for (int i = 1; i < sizex; i += 1) {
+            for (int j = 1; j < sizey; j += 1) {
+                taux[i][j] = t[i][j];
+            }
+        }
         for(int k = 0; k < expand; k++){
             for (int i = 1; i < sizex; i += 1) {
                 for (int j = 1; j < sizey; j += 1) {
                     if(numOuts(t, i, j) >= 3){
-                        t[i][j] = 1;
+                        taux[i][j] = 1;
                         fill(t, i, j, 1);
                     }
+                }
+            }
+            for (int i = 1; i < sizex; i += 1) {
+                for (int j = 1; j < sizey; j += 1) {
+                    t[i][j] = taux[i][j];
                 }
             }
         }
