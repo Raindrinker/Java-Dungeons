@@ -14,6 +14,7 @@ public class DungeonGenerator {
      * @param minRoomSize minimum room width and height
      * @param maxRoomSize maximum room width and height
      * @param trim number of times we try to erase dead ends
+     * @param eraseColumns if we want lone walls to be erased or not
      * @param expand number of times we break walls surrounded by 3 or more empty spaces
      * @return 2D Integer matrix
      */
