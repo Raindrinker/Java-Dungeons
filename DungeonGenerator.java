@@ -26,8 +26,6 @@ public class DungeonGenerator {
         //Place rooms
         int num = placeRooms(t, numberOfRooms, maxRoomSize, minRoomSize);
 
-        System.out.println("rooms placed: " + num);
-
         //Create maze
         createMaze(t, num+1);
 
