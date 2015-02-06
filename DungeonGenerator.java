@@ -35,6 +35,9 @@ public class DungeonGenerator {
         //Connect all regions
         connectRegions(t);
 
+        //Fill the only region left with ones
+        fill(t, 1, 1, 1);
+
         //Trim
         trim(t, trim);
 
