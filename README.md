@@ -5,7 +5,7 @@ Various bits of code for games in Java
 
 * **DungeonGenerator**
 
-Creates a dungeon in the format of a 2D matrix where 0s are walls and positive integers are walkable tiles.
+Creates a dungeon in the format of a 2D matrix where 0s are walls and 1s are walkable tiles.
 Has various configuration values (size, number of rooms, room size, etc.).
 
 ![Image of Yaktocat](http://i.gyazo.com/f4a448649a78aef4097196c42f2e5894.png)
