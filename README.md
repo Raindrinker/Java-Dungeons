@@ -8,7 +8,7 @@ Various bits of code for games in Java
 Creates a dungeon in the format of a 2D matrix where 0s are walls and 1s are walkable tiles.
 Has various configuration values (size, number of rooms, room size, etc.).
 
-![DungeonGenerator example](http://gyazo.com/e4281665a98b4df64da869207200eb30)
+![DungeonGenerator example](http://i.gyazo.com/e4281665a98b4df64da869207200eb30.png)
 One result in a specific configuration, drawn using Java graphic library Slick2D
 
 ###CHANGELOG
