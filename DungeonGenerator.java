@@ -18,7 +18,7 @@ public class DungeonGenerator {
      * @param expand number of times we break walls surrounded by 3 or more empty spaces
      * @return 2D Integer matrix
      */
-    public static int[][] Generate(int xsize, int ysize, int numberOfRooms, int minRoomSize, int maxRoomSize, int trim, boolean eraseColumns, int expand){
+    public static int[][] generate(int xsize, int ysize, int numberOfRooms, int minRoomSize, int maxRoomSize, int trim, boolean eraseColumns, int expand){
 
         //Create the Integer grid
         int[][] t = new int[xsize][ysize];
